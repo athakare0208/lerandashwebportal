@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+
+        .baner{
+            display: flex;
+            width: 100%;
+            height: 14vh;
+            background-color:rgb(17, 16, 16);
+            /* background-color: brown; */
+        }
+        .i{
+            width: 20%;
+        }
+        .i img {
+            width: 40%;
+            height: 8vh;
+            position: relative;
+            top: 20px;
+            left: 40px;
+            border-radius: 10px;
+        }
+        .menu{
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            justify-content: space-around;
+            position: relative;
+            top: 35px;
+            color: white;
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .menu a{
+            color: white;
+            text-decoration: none;
+        }
+        .menu :hover{
+            color: red;
+        }
+        .btn{
+            width: 7%;
+            height: 7vh;
+            position: relative;
+            left: 25%;
+            top: 24px;
+            font-size: 20px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background: transparent;
+            border: 1px solid white;
+            border-radius: 10px;
+        }
+        .btn a{
+            color: white;
+            text-decoration: none;
+        }
+        .btn :hover{
+            color: red;
+        }
+        .b{
+            width: 100%;               
+            height: 86vh;
+            display: flex;
+            flex-direction: row;
+        }
+        .baner1{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 86vh;
+            /* background-color: brown; */
+        }
+        .i1{
+            position: relative;
+            top: 19%;
+            left: 6%;
+            font-size: 45px;
+        }
+        .i2{
+            position: relative;
+            top: 24%;
+            left: 6%;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .i3{
+            position: relative;
+            top: 30%;
+            left:6% ;
+            width: 16%;
+            height:7vh;
+            background-color: blue;
+            color: white;
+            border-radius: 20px;
+            border: 0px solid blue;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+
+        }
+        .i3 a{
+            color: white;
+            text-decoration: none;
+        }
+        .baner2{
+            width: 50%;
+            height: 86vh;
+            /* background-color: violet; */
+        }
+        .i4 img{
+            width: 90%;
+            height: 80vh;
+            position: relative;
+            top: 30px;
+            left: 30px;
+        }
+        .i5{
+            margin-top: 5%;
+            margin-left: 35%;
+            font-size: 25px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .baner3{
+            width: 100%;
+            height: 30vh;
+            /* margin-top: 30px; */
+            /* background-color: aquamarine; */
+            display: flex;
+            flex-direction: row;
+        }
+        .img1{
+            position: relative;
+            top: 20%;
+        }
+        .img2{
+            position: relative;
+            top: 20%;
+            width: 20%;
+        }
+        .img3{
+            position: relative;
+            top: 30px;
+            width: 20%;
+        }
+        .img4{
+            position: relative;
+            top: 35px;
+            width: 20%;
+        }
+        .img5{
+            position: relative;
+            top: 30px;
+        }
+        .b1{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 80vh;
+            /* background-color:rgb(225, 208, 187); */
+        }
+        .baner4{
+            width: 50%;
+            height: 80vh;
+            /* background-color: cadetblue; */
+            /* margin-top: 10px; */
+        }
+        .img6 img{
+            height: 65vh;
+            margin-top: 5%;
+            margin-left: 5%;
+        }
+        .baner5{
+            width: 50%;
+            height: 80vh;
+            /* background-color: red; */
+        }
+        .i6{
+            margin-top: 10%;
+            margin-left: 6%;
+            font-size: 16px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .i7{
+            margin-top: 27px;
+            margin-left: 6%;
+            font-size: 42px;
+        }
+        .i8{
+            margin-top: 25px;
+            margin-left: 6%;
+            font-size: 21px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .i9{
+            margin-top: 29px;
+            margin-left: 6%;
+            width: 24%;
+            height: 8vh;
+            font-size: 15px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(44, 44, 243);
+            border-radius: 25px;
+            border: 0px solid blue;
+        }
+        .i9 a{
+            color: wheat;
+            text-decoration: none;
+        }
+        .i9:hover{
+            background-color: blue;
+        }
+        .b2{
+            display: flex;
+            width: 100%;
+            height: 70vh;
+            background-color: lightgoldenrodyellow;
+        }
+        .baner6{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            height: 70vh;
+            /* background-color: red; */
+        }
+        .i10{
+            position: relative;
+            top: 20%;
+            left: 8%;
+            font-size: 18px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .i11{
+            position: relative;
+            top: 25%;
+            left: 8%;
+            font-size: 40px;
+        }
+        .i12{
+            position: relative;
+            top: 32%;
+            left: 8%;
+            font-size: 21px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .btn4{
+            position: relative;
+            top: 38%;
+            left: 8%;
+            width: 14%;
+            height: 7vh;
+            font-size: 16px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 20px;
+            border: 0px solid blue;
+            background-color: rgb(44, 44, 243);
+        }
+        .btn4 a{
+            color: white;
+            text-decoration: none;
+        }
+        .btn4:hover{
+            background-color: blue
+        }
+        .baner7{
+            display: flex;
+            width: 50%;
+            height: 70vh;
+            /* background-color: greenyellow; */
+        }
+        .z1{
+            width: 50%;
+            height: 70vh;
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+        }
+        .img7 img{
+            margin-top: 30%;
+            margin-left: 23%;
+        }
+        .i13{
+            position: relative;
+            top: 20px;
+            left: 30%;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .z2{
+            width: 50%;
+            height: 70vh;
+            /* background-color: rgb(205, 76, 50); */
+            display: flex;
+            flex-direction: column;
+        }
+        .img8 img{
+            margin-top: 30%;
+            margin-left: 23%;
+            
+        }
+        .i14{
+            margin-top: 20px;
+            margin-left: 30%;
+            font-size: 18px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .baner8{
+            width: 100%;
+            height: 80vh;
+            /* background-color: violet; */
+            position: relative;
+            top: 20px;
+            display: flex;
+        }
+        .y1{
+            width: 50%;
+            height: 80vh;
+            /* background-color: black; */
+        }
+        .img9 img{
+            width: 90%;
+            height: 75vh;
+            margin-top: 20px;
+        }
+        .y2{
+            width: 50%;
+            height: 80vh;
+            /* background-color: rgb(229, 37, 37); */
+            display: flex;
+            flex-direction: column;
+        }
+        .p1{
+            
+            position: relative;
+            top: 12%;
+            margin-left: 12%;
+            font-size: 50px;
+        }
+        .p2{
+            margin-top: 12%;
+            margin-left: 12%;
+            font-size: 20px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .p2:hover{
+            width: 25%;
+            color: rgb(43, 43, 235);
+            text-decoration: underline;
+        }
+        .p3{
+            margin-top: 16px;
+            margin-left: 12%;
+            font-size: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .p4{
+            margin-top: 3%;
+            margin-left: 12%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .p4:hover
+        {
+            width: 25%;
+            color: rgb(43, 43, 235);
+            text-decoration: underline;
+
+        }
+        .p5{
+            margin-top: 16px;
+            margin-left: 12%;
+            font-size: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .p6{
+            margin-top: 3%;
+            margin-left: 12%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .p6:hover{
+            width: 35%;
+            color: rgb(43, 43, 235);
+            text-decoration: underline;
+        }
+        .p7{
+            margin-top: 16px;
+            margin-left: 12%;
+            font-size: 20px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .p8{
+            margin-top: 5%;
+            margin-left: 12%;
+            text-decoration: underline;
+            width: 30%;
+            height: 5vh;
+            font-size: 18px;
+            background: transparent;
+            border: 0px solid white;
+            color: rgb(15, 15, 232);
+        }
+        .p8 a:hover{
+            /* text-decoration: none; */
+            color: red;
+        }
+        .baner9{
+            width: 95%;
+            height: 45vh;
+            background-color: lightgreen;
+            margin-left: 3%;
+            border-radius: 20px;
+            margin-top: 5%;
+            display: flex;
+            
+        }
+        .s{
+            width: 50%;
+            height: 45vh;
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+        }
+        .l1{
+            margin-left: 6%;
+            position: relative;
+            top: 10%;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .l2{
+            position: relative;
+            top: 16%;
+            margin-left: 6%;
+            font-size: 40px;
+        }
+        .l3{
+            position: relative;
+            top: 25%;
+            margin-left: 7%;
+            font-size: 25px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .l4{
+            position: relative;
+            top: 35%;
+            width: 30%;
+            margin-left: 7%;
+            height: 9vh;
+            font-size: 16px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 30px;
+            background: transparent;
+            background-color: rgb(51, 51, 242);
+            border: 0px solid rgb(51, 51, 242);
+        }
+        .l4 a{
+            text-decoration: none;
+            color: black;
+            text-decoration: underline;
+        }
+        .s1{
+            width: 50%;
+            /* background-color: black; */
+            border-radius: 20px;
+        }
+        .s1 img{
+            position: relative;
+            top: 40px;
+            margin-left: 20%;
+        }
+        .baner10{
+            width: 100%;
+            height: 48vh;
+            /* background-color: rgb(243, 101, 101); */
+            margin-top: 4%;
+            display: flex;
+        }
+        .v{
+            width: 16%;
+            height: 48vh;
+            /* background-color: brown; */
+        }
+        .q1{
+            position: relative;
+
+            top: 10%;
+            margin-left:25%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .q2{
+            position: relative;
+            top: 12%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q3{
+            position: relative;
+            top: 14%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q4{
+            position: relative;
+            top: 16%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q5{
+            position: relative;
+            top: 18%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q6{
+            position: relative;
+            top: 20%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q7{
+            position: relative;
+            top: 22%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q8{
+            position: relative;
+            top: 24%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q9{
+            position: relative;
+            top: 26%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .v1{
+            width: 16%;
+            height: 48vh;
+            /* background-color: aquamarine; */
+        }
+        .m{
+            position: relative;
+
+            top: 10%;
+            margin-left:25%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .q10{
+            position: relative;
+            top: 12%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q11{
+            position: relative;
+            top: 14%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q12{
+            position: relative;
+            top: 16%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q13{
+            position: relative;
+            top: 18%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .v2{
+            width: 16%;
+            height: 48vh;
+            /* background-color: rgb(227, 227, 5); */
+        }
+        .q14{
+            position: relative;
+            top: 10%;
+            margin-left:25%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .q15{
+            position: relative;
+            top: 12%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q16{
+            position: relative;
+            top: 14%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q17{
+            position: relative;
+            top: 16%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q18{
+            position: relative;
+            top: 18%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q19{
+            position: relative;
+            top: 20%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q20{
+            position: relative;
+            top: 22%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .v3{
+            width: 16%;
+            height: 48vh;
+            /* background-color:cornflowerblue; */
+        }
+        .q21{
+            position: relative;
+            top: 10%;
+            margin-left:25%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .q22{
+            position: relative;
+            top: 12%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q23{
+            position: relative;
+            top: 14%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q24{
+            position: relative;
+            top: 16%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q25{
+            position: relative;
+            top: 18%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .q26{
+            position: relative;
+            top: 20%;
+            font-size: 14px;
+            margin-left: 25%;
+        }
+        .v4{
+            width: 40%;
+            height: 48vh;
+            /* background-color: rgb(92, 71, 255); */
+        }
+        .q27{
+            position: relative;
+            top: 10%;
+            margin-left:14%;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .q28{
+            position: relative;
+            top: 12%;
+            font-size: 16px;
+            margin-left: 14%;
+        }
+        .inp{
+            position: relative;
+            top: 20%;
+            margin-left: 14%;
+        }
+        .inp input{
+            width: 70%;
+            height: 6vh;
+            border: 2px solid black;
+            background: transparent;
+            border-radius: 5px;
+            /* color: black; */
+            text-indent: 20px;
+        }
+        ::placeholder{
+            color: black;
+        }
+        /* .inp input::placeholder{
+            position: relative;
+            left: 5%;
+            
+        } */
+        .btn5{
+            position: relative;
+            top: 25%;
+            margin-left: 58%;
+            width: 15%;
+            height: 5vh;
+            background: transparent;
+            border: 0px solid black;
+            font-size: 16px;
+        }
+        .btn5 a{
+            color: black;
+            text-decoration:underline;
+            
+        }
+        .footer{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 14vh;
+            background-color:rgb(17, 16, 16);
+        }
+        .f1 img{
+            height: 6vh;
+            position: relative;
+            top: 3vh;
+            margin-left: 90%;
+        }
+        .f2{
+            position: relative;
+            top: 3vh;
+            margin-left: 70%;
+        }
+    </style>
+</head>
+<body>
+    <div class="baner">
+        <div class="i"><img src="https://d1yei2z3i6k35z.cloudfront.net/161/6127f4c0800eb_learndash_logo.png" alt="img"></div>
+        <div class="menu">
+            <div><a href="/" >Home</a></div>
+            <div><a href="/" >Login</a></div>
+            <div><a href="Reg.html" >Register</a></div>
+            <div><a href="/" >Carrer</a></div>
+        </div>
+        <button class="btn"><a href="Login.html">Sing In</a></button>
+    </div>
+    <div class="b">
+        <div class="baner1">
+            <div class="i1">The most powerful learning  <br>
+                            management system for <br>
+                            WordPress.</div>
+            <div class="i2">Create professional, engaging courses in just a few clicks.</div>
+            <button class="i3"><a href="https://demo.learndash.com/all-courses/">Demo</a></button>
+        </div>
+        <div class="baner2">
+            <div class="i4"><img src="https://www.learndash.com/wp-content/uploads/learndash-home-hero.png.webp" alt="img"></div>
+        </div>
+    </div>
+    <div class="i5">LearnDash is trusted by brands including</div>
+    <div class="baner3">
+        <div class="img1"><img src="https://www.learndash.com/wp-content/uploads/learndash-logo-yoast.png" alt="img"></div>
+        <div class="img2"><img src="https://www.learndash.com/wp-content/uploads/learndash-logo-keap.png" alt="img"></div>
+        <div class="img3"><img src="https://www.learndash.com/wp-content/uploads/learndash-logo-digital-marketer.png" alt="img"></div>
+        <div class="img4"><img src="https://www.learndash.com/wp-content/uploads/learndash-logo-univ-fla.png" alt="img"></div>
+        <div class="img5"><img src="https://www.learndash.com/wp-content/uploads/learndash-logo-tony-robbins.png" alt="img"></div>
+    </div>
+   <div class="b1">
+      <div class="baner4">
+        <div class="img6"><img src="https://www.learndash.com/wp-content/uploads/learndash-home-integrations.png" alt="img"></div>
+      </div>
+      <div class="baner5">
+        <div  class="i6">INTEGRATIONS</div>
+        <div class="i7">Merge seamlessly with the rest of <br>
+                        your site.</div>
+        <div class="i8">LearnDash works with any WordPress theme or page <br>
+                        builder. Connect it to the tools you already know and love — <br>
+                        without breaking your site.</div>
+        <button class="i9"><a href="https://www.youtube.com/@LearnDashLMS">Browe integrations</a></button>
+      </div>
+   </div>
+   <div class="b2">
+    <div class="baner6">
+        <div class="i10">LEARNDASH ACCOLADES</div>
+        <div class="i11">Award-winning e-learning solution</div>
+        <div class="i12">Recognized by leading names in the industry.</div>
+        <button class="btn4"><a href="/">Buy now</a></button>
+    </div>
+    <div class="baner7">
+        <div class="z1">
+            <div class="img7"><img src="https://www.learndash.com/wp-content/uploads/Group-2202.png" alt="img"></div>
+            <div class="i13"><b>Top 20</b> Training <br>Software Winner</div>
+        </div>
+        <div class="z2">
+            <div class="img8"><img src="https://www.learndash.com/wp-content/uploads/elearningi.png" alt="img"></div>
+            <div class="i14"><b>Top 20 </b>LMS based <br>on User Experience</div>
+        </div>
+    </div>
+   </div>
+   <div class="baner8">
+    <div class="y1">
+        <div class="img9"><img src="https://www.learndash.com/wp-content/uploads/learndash-home-why-built-by-experts.png.webp" alt="img"></div>
+    </div>
+    <div class="y2">
+        <div class="p1">Why LearnDash?</div>
+
+        <div class="p2">Complete control</div>
+        <div class="p3">Create coure with flexible pricing models and customizable <br>design. </div>
+        <div class="p4">Built by experts</div>
+        <div class="p5">Crafted by the top minds e-learning specifally for education.</div>
+        <div class="p6">Better learning outcomes</div>
+        <div class="p7">Certificates, quizzes, and assignments keep students engaged.</div>
+        <button class="p8"><a href="https://www.learndash.com/support/">See more reasons why</a></button>
+    </div>
+   </div>
+   <div class="baner9">
+     <div class="s">
+        <div class="l1">LEARNDASH DEMO</div>
+        <div class="l2">Try LearnDash for yourself.</div>
+        <div class="l3">See all of our features in action.</div>
+        <button class="l4"><a href="/">Give Learndash a try</a></button>
+     </div>
+     <div class="s1"><img src="https://www.learndash.com/wp-content/uploads/need-to-finalize-cropping.png" alt="img"></div>
+   </div>
+   <div class="baner10">
+    <div class="v">
+        <div class="q1">Products</div>
+        <div class="q2">LearnDash LMS Plugin</div>
+        <div class="q3">MemberDash Plugin</div>
+        <div class="q4">LearnDash Cloud</div>
+        <div class="q5">ProPanel</div>
+        <div class="q6">Groups Plus</div>
+        <div class="q7">Gradebook</div>
+        <div class="q8">Notes</div>
+        <div class="q9">Integrations</div>
+    </div>
+    <div class="v1">
+        <div class="m">Support</div>
+        <div class="q10">Contact Us</div>
+        <div class="q11">Experts</div>
+        <div class="q12">Documentation</div>
+        <div class="q13">Facebook Community</div>
+    </div>
+    <div class="v2">
+        <div class="q14">Company</div>
+        <div class="q15">About LearnDash </div>
+        <div class="q16">Brand Assets</div>
+        <div class="q17">Careers</div>
+        <div class="q18">Affiliates</div>
+        <div class="q19">Privacy Policy</div>
+        <div class="q20">Terms and Conditions</div>
+    </div>
+    <div class="v3">
+        <div class="q21">Our Partners</div>
+        <div class="q22">The Events Calendar</div>
+        <div class="q23">Restrict Content Pro</div>
+        <div class="q24">Kadence</div>
+        <div class="q25">GiveWP</div>
+        <div class="q26">Iconic</div>
+        
+    </div>
+
+    <div class="v4">
+        <div class="q27">Stay Connected</div>
+        <div class="q28">Subscribe to our newsletter</div>
+        <div class="inp"> <input type="text" placeholder="Email*" ></div>
+        <button class="btn5"><a href="Login.html">Sign up</a></button>
+    </div>
+   </div>
+   <div class="footer">
+    <div class="f1"><img src="https://www.learndash.com/wp-content/uploads/stellar.svg" alt="img"></div>
+    <div class="f2"><img src="https://www.learndash.com/wp-content/uploads/powered-by-nexcess.svg" alt="img"></div>
+   </div> 
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+        }
+        .log{
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(19, 115, 175);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .P img{
+            width: 10%;
+            height: 10vh;
+            display: flex;
+            
+            margin: auto;
+            position: relative;
+            top: 90px;
+        }
+        .page{
+            width: 26%;
+            height: 44vh;
+            background-color: white;
+            /* display: flex; */
+            /* margin: auto; */
+            margin-top: 9%;
+            margin-left: 37%;
+            border-radius: 20px;
+        }
+        .P1{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            color: rgb(112, 109, 109);
+        }
+        /* .P2{
+            width:85%;
+            height: 5vh;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 10px;
+            border: 2px solid rgb(23, 22, 22);
+        } */
+        .P3{
+            margin-top: 20px;
+            margin-left: 20px;
+            font-size: 18px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+            color: rgb(112, 109, 109);
+        }
+        .P4{
+            width:85%;
+            height: 5vh;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-radius: 10px;
+            text-indent: 20px;
+            border: 1px solid black;
+        }
+        .P5{
+            width: 85%;
+            height: 6vh;
+            margin-left: 20px;
+            margin-top: 24px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(2, 106, 171);
+            border: 0px solid rgb(2, 106, 171);
+        }
+        .P5 a{
+            color: white;
+            text-decoration: none;
+        }
+        .P5:hover{
+            background-color:rgb(3, 151, 243);
+        }
+        .a1{
+            margin-top: 2%;
+            margin-left: 38%;
+            color: white;
+        }
+        .a1 a{
+            color: white;
+            font-size: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: none;
+        }
+        .a1 a:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="log">
+        <p class="P"><img src="https://th.bing.com/th/id/OIP.1p6T460Ddhha0zDwChvutgAAAA?pid=ImgDet&rs=1" alt="img"></p>
+        <div class="page">
+            <form>
+                <p class="P1">Username or Email Address</p>
+            
+                <input type="text" class="P4"/>
+            <p class="P3">Password</p>
+            <input type="text" class="P4"/>
+            <input type="submit" value="login" class="P5"/>
+            </form>
+        </div>
+        <div class="a1"><a href="#">Lost your password?</a></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register form</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            outline: 0px;
+
+        }
+        .baner{
+            width: 45%;
+            height: 80vh;
+            background-color: red;
+            margin: auto;
+            margin-top: 60px;
+            border-radius: 15px;
+        }
+        .b1{
+            width: 100%;
+            height: 65vh;
+            background-color: bisque;
+            position: relative;
+            top: 55px;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+        }
+        .b2{
+            position: relative;
+            top: 25px;
+            left: 19%;
+            font-size: 44px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            /* text-decoration:underline; */
+        }
+        .a1{
+            width: 50%;
+            height: 65vh;
+            line-height: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+        .tag{
+            position: relative;
+            top: 10%;
+            left: 15%;
+            font-size: 16px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .in{
+            width: 70%;
+            height: 4vh;
+            position: relative;
+            text-indent: 20px;
+            top: 50px;
+            /* width: 60%; */
+            left: 15%;
+            background: transparent;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+       
+        .btn{
+            width: 40%;
+            height: 5vh;
+            position: relative;
+            left: 30%;
+            top: 15px;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(4, 184, 244);
+            border: 1px solid black;
+            border-radius: 10px;
+            
+        }
+        .btn:hover{
+            background-color:blue;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="baner">
+        <p class="b2">New Register Form</p>
+       
+       <form>
+        <div class="b1">
+            <div class="a1">
+                <div class="tag">First Name*</div>
+                <input type="text" class="in">
+                <div class="tag">E-mail*</div>
+                <input type="email" class="in">
+                <div class="tag">City*</div>
+                <input type="text" class="in">
+                <div class="tag">Zip Code*</div>
+                <input type="text" class="in">
+            </div>
+            <div class="a1">
+                <div class="tag">Last Name*</div>
+                <input type="text" class="in">
+                <div class="tag">College Name*</div>
+                <input type="text" class="in">
+                <div class="tag">Street Address*</div>
+                <input type="text" class="in">
+                <div class="tag">State/Province*</div>
+                <input type="text" class="in">
+            </div>
+        </div>
+                <input type="submit" value="submit" class="btn">
+       </form>
+       
+    </div>
+   
+
+</body>
+</html>
